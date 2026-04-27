@@ -1,0 +1,13 @@
+{
+  "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "types": ["powerapps-component-framework","dom-speech-recognition"]
+    //"typeRoots": ["node_modules/@types"]
+  },
+  "include": [
+    "**/*.ts",            // Finds index.ts inside MainControl
+    "generated/**/*.ts"   // Finds the ComponentFramework types
+  ]
+} 
